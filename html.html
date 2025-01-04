@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento de Processos</title>
+    <link rel="stylesheet" href="CSS.CSS">
+</head>
+<body>
+    <header>
+        <h1>Acompanhamento de Processos</h1>
+    </header>
+    <main>
+        <section id="add-process">
+            <h2>Cadastrar Novo Processo</h2>
+            <form id="process-form">
+                <label for="process-number">Número do Processo:</label>
+                <input type="text" id="process-number" name="process-number" required>
+                <button type="submit">Salvar Processo</button>
+            </form>
+        </section>
+        <section id="process-list">
+            <h2>Processos Cadastrados</h2>
+            <ul id="processes"></ul>
+        </section>
+    </main>
+    <!-- Importação de scripts do Firebase -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
+    <!-- Incluindo o arquivo JavaScript como módulo -->
+    <script type="module" src="JS.JS"></script>
+</body>
+</html>
